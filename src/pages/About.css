@@ -1,0 +1,101 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* About Page Container */
+  .about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  .about-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  /* Content Styling */
+  .about-content {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  
+  .about-content p {
+    margin: 0;
+  }
+  
+  /* Highlights Section */
+  .about-highlights {
+    margin-top: 30px;
+  }
+  
+  .about-highlights h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .about-highlights ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-highlights li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-highlights li::before {
+    content: '✔️';
+    margin-right: 10px;
+  }
+  
+  /* Call to Action Section */
+  .about-cta {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .about-cta h3 {
+    font-size: 1.6rem;
+    color: #34495e;
+  }
+  
+  .about-cta p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #27ae60;
+  }
+  

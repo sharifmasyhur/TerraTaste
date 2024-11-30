@@ -1,0 +1,47 @@
+.nav{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 40px 120px;
+     color: white;
+ }
+
+ .nav-logo{
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+ }
+
+ .nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px;
+ }
+
+ .nav-contact{
+    border-radius: 50px;
+    padding: 10px 38px;
+    background: white;
+    color: black;
+ }
+
+ .nav-menu a {
+   text-decoration: none; /* Remove underline */
+   color: inherit; /* Inherit color from parent (white in this case) */
+   font-weight: bold; /* Optional: Makes text stand out */
+   transition: color 0.3s; /* Adds smooth hover effect */
+}
+
+.nav-menu a:hover {
+   color: #ccc; /* Optional: Change color on hover */
+}
+
+.nav-contact a {
+   color: black; /* Ensure the contact button text is black */
+}
+
+.nav-menu a:visited {
+   color: inherit; /* Prevent the purple visited state */
+}
