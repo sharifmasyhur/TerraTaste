@@ -6,7 +6,7 @@ import './Contact.css';
 function Contact() {
   return (
     <div>
-        <Navbar />  
+    <Navbar />  
     <section className="contact-section">
       <h2 className="section-heading">Contact Us</h2>
       <div className="contact-info">

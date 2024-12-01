@@ -5,41 +5,37 @@ import './About.css';
 
 const About = () => {
   return (
-    <>
+    <div>
       <Navbar />
-      <div className="about-container">
-        <header className="about-header">
-          <h1>About TerraTaste</h1>
+    <div className="container mx-auto p-6">
+        <header className="text-center mb-8">
+            <h1 className="text-4xl font-bold text-green-600">About TerraTaste</h1>
+            <p className="text-lg text-gray-700 mt-2">Your guide to eco-friendly eating</p>
         </header>
-        <section className="about-content">
-          <p>
-            TerraTaste is dedicated to empowering individuals to understand and 
-            reduce the environmental impact of their food consumption. By offering 
-            a user-friendly platform to track meals' carbon footprint, TerraTaste 
-            enables users to make more sustainable food choices, thus contributing 
-            to the global fight against climate change.
-          </p>
+        <section className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h2>
+            <p className="text-gray-700 mb-4">
+                TerraTaste is an intuitive app that helps people choose foods that aren’t necessarily good for the environment and reduce their carbon footprint. The goal of the software is to reduce food waste, provide information about how food affects the environment, and encourage users to reduce their daily consumption.
+            </p>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Features</h2>
+            <ul className="list-disc list-inside text-gray-700 mb-4">
+                <li>Reduce food waste</li>
+                <li>Provide information about environmental impact of foods</li>
+                <li>Encourage reduced daily consumption</li>
+                <li>Plant-based food samples</li>
+                <li>Educational resources and visual aids</li>
+                <li>Forum for plant-based food discussions</li>
+                <li>Environmentally conscious meal ideas</li>
+            </ul>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Join Us</h2>
+            <p className="text-gray-700 mb-4">
+                To encourage more wholesome eating practices, the app will provide plant-based food samples, educational resources, and visual aids. To encourage people to eat plant-based foods, the app will also provide a forum for users to learn about plant-based foods and find environmentally conscious meal ideas.
+            </p>
         </section>
-        <section className="about-highlights">
-          <h2>Our Features</h2>
-          <ul>
-            <li>🌱 Real-time carbon tracking for every meal.</li>
-            <li>📚 Educational insights on food and sustainability.</li>
-            <li>🍽️ Personalized recommendations for eco-friendly alternatives.</li>
-            <li>🌍 Promotes small actions for big environmental changes.</li>
-          </ul>
-        </section>
-        <section className="about-cta">
-          <h3>Join Us</h3>
-          <p>
-            Ready to make a difference? Start your journey towards sustainable 
-            living with TerraTaste today.
-          </p>
-          <button className="cta-button">Get Started</button>
-        </section>
-      </div>
-    </>
-  );
+    </div>
+    </div>
+);
 };
+
 
 export default About;
