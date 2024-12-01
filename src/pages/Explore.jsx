@@ -5,7 +5,7 @@ export default function Explore() {
     return (
         <div>
             <Navbar></Navbar>
-            <div>Explore Page</div>
+            <div>Still Under Maintance!</div>
         </div>
     )
 }
