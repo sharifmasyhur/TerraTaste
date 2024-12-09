@@ -33,9 +33,9 @@ Before you begin, make sure you have the following installed:
     git clone https://github.com/sharifmasyhur/terrataste.git
     ```
 
-2. Navigate into the project directory:
+2. Navigate into the project directory (ex: c:\usr\Desktop\TerraTaste):
     ```bash
-    cd terrataste
+    cd TerraTaste
     ```
 
 3. Install dependencies:
