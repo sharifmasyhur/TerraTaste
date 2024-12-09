@@ -72,4 +72,5 @@ We welcome contributions from the community! If you'd like to contribute, follow
 
 ---
 
-For more information, visit [TerraTaste Website](https://www.terrataste.com).
+For more information, visit [TerraTaste Website]([https://www.terrataste.com](https://sharifmasyhur.github.io/TerraTaste/).
+[TerraTaste PPTX](https://www.canva.com/design/DAGYterLzGA/mVnLzUarIwC6y1AcOAQq6Q/edit?utm_content=DAGYterLzGA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
