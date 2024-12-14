@@ -1,0 +1,97 @@
+/* Contact.css */
+
+.contact-section {
+    background-color: #e8f5e9; /* light green background */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  }
+  
+  .section-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2e7d32; /* dark green color */
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-bottom: 40px;
+    text-align: center; /* center text */
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4caf50; /* medium green for text */
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #1b5e20; /* dark green link color */
+    transition: color 0.3s ease; /* smooth transition */
+  }
+  
+  .contact-info a:hover {
+    color: #004d40; /* even darker green on hover */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* make form elements stretch */
+    width: 100%; /* full width */
+    max-width: 600px; /* max width for larger screens */
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #2e7d32; /* dark green for labels */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a5d6a7; /* light green border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease; /* smooth transition */
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #66bb6a; /* darker green on focus */
+    outline: none; /* remove outline */
+  }
+  
+  .submit-button {
+    background-color: #4caf50; /* green button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* smooth transition */
+  }
+  
+  .submit-button:hover {
+    background-color: #388e3c; /* darker green on hover */
+  }

@@ -1,0 +1,806 @@
+/* CORE CSS-DESIGN FILE FOR THE PROJECT */
+/* Created by Michael D Wu, 2018-2020 */
+
+/* > GLOBAL > */
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fonts for the Project, Mainly are iterations of OpenSans-Light */
+  
+  @font-face{
+    font-family: OpenSans-Light;
+    src: url(../fonts/OpenSans-Light.ttf);
+  }
+  
+  @font-face{
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Semibold.ttf);
+  }
+  
+  @font-face{
+  font-family: OpenSans-BoldItalic;
+  src: url(../fonts/OpenSans-SemiboldItalic.ttf);
+  }
+  
+  body{
+    margin: 0;
+    background: #f0f0f0;
+    font-family: Helvetica, Arial;
+    font-weight: lighter;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0; /* Menghilangkan margin */
+    padding: 0 20px; /* Memberikan sedikit padding di sisi kiri dan kanan */
+    color: white;
+    background-color: black;
+    width: 100%; /* Memastikan lebar navbar 100% */
+  }
+  
+  .nav-logo {
+    font-family: Outfit;
+    font-size: 42px;
+    font-weight: 500;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    gap: 90px;
+  }
+  
+  .nav-contact {
+    border-radius: 50px;
+    padding: 10px 38px;
+    background: white;
+    color: black;
+  }
+  
+  .nav-menu a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent (white in this case) */
+    font-weight: bold; /* Optional: Makes text stand out */
+    transition: color 0.3s; /* Adds smooth hover effect */
+  }
+  
+  .nav-menu a:hover {
+    color: #ccc; /* Optional: Change color on hover */
+  }
+  
+  .nav-contact a {
+    color: black; /* Ensure the contact button text is black */
+  }
+  
+  .nav-menu a:visited {
+    color: inherit; /* Prevent the purple visited state */
+  }
+  
+  
+  /* > SHOWCASE BANNER SECTION > */
+  
+  #showcase{
+    background-image: url("./banner_image_dark-min.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center{
+    filter: brightness(100%);
+    color: white;
+    line-height: 1.6;
+  }
+  
+  #med-header{
+    font-size: 18px;
+    word-spacing: 0.11em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  hr{
+    width: 200px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 2px;
+    /**height used to be 1 px, width used to 160px**/
+  }
+  
+  #big-header{
+  margin-top: 10px;
+  font-size: 55px;
+  font-family: Helvetica, Arial;
+  font-weight: 300;
+  }
+  
+  #small-header{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  #step-title{
+  margin-bottom: 1.0vh;
+  }
+  
+  #titlesubheading-container{
+  width: 55%;
+  }
+  
+  /* > OVERALL FOOTPRINT CALCULATOR SECTION > */
+  
+  .container{
+    text-align: center;
+  }
+  
+  .slide-container{
+  width: 85%;
+  }
+  
+  .ui-slider, .ui-slider .slider-range-inverse, .ui-slider .ui-slider-range {
+  height: 14px;
+  border-radius: 10px;
+  border-width: 0;
+  }
+  
+  /* > FONTS SIZES AND HEADINGS < */
+  
+  h1 {
+  text-align: center;
+  color: #444;
+  padding-bottom: 2.0vw;
+  padding-top: 0vw;
+  font-family: OpenSans-Light;
+  font-size: 18px;
+  }
+  
+  h2{
+  color: #444;
+  font-family: OpenSans-Light;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 0.9vh;
+  text-transform: uppercase;
+  }
+  
+  h3{
+  text-align: center;
+  color: #444;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  font-family: OpenSans-Light;
+  font-size: 25px;
+  }
+  
+  h4 {
+  text-align: center;
+  color: #444;
+  margin-top: 1.3vh;
+  margin-bottom: 0.6vw;
+  font-family: OpenSans-Light;
+  font-size: 32px;
+  }
+  
+  /* Used for bolding any text */
+  #bold{
+  font-family: OpenSans-Bold;
+  }
+  
+  #title-subheading {
+  text-align: center;
+  color: #444;
+  padding-top: 0vw;
+  font-family: 'OpenSans-Light';
+  font-size: 15px;
+  }
+  
+  
+  #serving-size{
+  font-family: OpenSans-Light;
+  font-size: 12px;
+  color: rgb(124, 124, 124);
+  }
+  
+  #table-heading-font{
+  font-size: 13px;
+  }
+  
+  /* > SPACING SECTIONS < */
+  
+  #post-subtitle-spacing{
+  padding-bottom: 1.0vh;
+  }
+  
+  #post-subtitle-spacing-2{
+  padding-bottom: 3px;
+  }
+  
+  #post-subtitle-spacing-3{
+  padding-bottom: 2.0vh;
+  }
+  
+  #rand-spacing{
+  padding-bottom: 0.8vh;
+  }
+  
+  #slider-container {
+  width: 80%;
+  height: 800px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  /* padding used to maintain top spacing */
+  padding: 1.8vw 3.0vh 1.8vw 2.4vw;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  #submitButton{
+  margin-top: 4.5vh;
+  border-radius: 6px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  padding: 10px 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  }
+  
+  .selectpicker{
+  width: 50%;
+  height: 35px;
+  }
+  
+  /* > CAROUSEL SECTION > */
+  /* From: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+  
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+  display: none;
+  }
+  
+  /* Fading animation */
+  .fader {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }
+  
+  @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }
+  
+  
+  /* > BUTTON MULTIPLE SELECTION < */
+  .btn{
+  width: 4vw;
+  max-width: 60px;
+  height: 43px;
+  border-radius: 0 !important; 
+  }
+  
+  .col-headers{
+  width: 4vw;
+  max-width: 60px;
+  }
+  
+  div.row{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .btn-primary{
+  background-color: white;
+  border: white;
+  }
+  
+  .btn-primary:hover {
+  background-color: #52bebe;
+  border-color: #8ad3d3
+  }
+  
+  .btn-primary:focus,
+  .btn-primary.focus {
+  box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+  }
+  
+  .btn-primary.disabled,
+  .btn-primary:disabled {
+  background-color: #7cc;
+  border-color: #b0c9c9
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active,
+  .btn-primary:not(:disabled):not(.disabled).active,
+  .show>.btn-primary.dropdown-toggle {
+  background-color: #9cdada;
+  border-color: #2e7c7c
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus,
+  .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(91, 194, 194, 0.5)
+  }
+  
+  .btn-outline-primary {
+  color: #7cc;
+  background-color: transparent;
+  background-image: none;
+  border-color: #7cc
+  }
+  
+  .btn-outline-primary:hover {
+  color: #222;
+  background-color: #8ad3d3;
+  border-color: #7cc
+  }
+  
+  .btn-outline-primary:focus,
+  .btn-outline-primary.focus {
+  box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+  }
+  
+  .btn-outline-primary.disabled,
+  .btn-outline-primary:disabled {
+  color: #7cc;
+  background-color: transparent
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active,
+  .btn-outline-primary:not(:disabled):not(.disabled).active,
+  .show>.btn-outline-primary.dropdown-toggle {
+  color: #212529;
+  background-color: #8ad3d3;
+  border-color: #7cc
+  }
+  
+  .btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+  .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+  .show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(119, 204, 204, 0.5)
+  }
+  
+  /* >  NEXT & PREVIOUS BUTTONS < */
+  .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  }
+  
+  /* > DOTS SECTION < */
+  /* The dots/bullets/indicators */
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+  background-color: #717171;
+  }
+  
+  #dots-container {
+  margin-bottom: 32px;
+  }
+  
+  
+  /* > FINAL RESULTS PAGE WITH ENVIRONMENTAL FOOTPRINT OUTPUT > */
+  .footprint_container{
+  width: 100%;
+  height: 60vh;
+  padding-right: 9.73vw;
+  padding-left: 9.73vw;
+  }
+  
+  .text_container{
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+  }
+  
+  /* Centering the footprint values in the middle */
+  tr.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .footprint{
+  padding-top: 20px;
+  font-size: 35px;
+  color: #444;
+  font-family: OpenSans-Light;
+  text-align: center;
+  }
+  
+  .footprint_text{
+  font-size: 18px;
+  color: #444;
+  padding-bottom: 25px;
+  font-family: OpenSans-Light;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  
+  .table {
+  padding: 0.2vh;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  display: table;
+  width: 65%;
+  }
+  
+  td {
+  vertical-align: middle;
+  }
+  
+  .footprinttext_description {
+  text-align: justify;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #444;
+  font-family: OpenSans-Light;
+  font-size: 16.5px;
+  line-height: 1.5;
+  font-weight: bold;
+  }
+  
+  /* > REFERENCES SECTION < */
+  #references-title{
+  color: rgb(34, 34, 34);
+  padding-left: 10px;
+  font-family: OpenSans-Light;
+  padding-bottom: 0.5vh;
+  padding-top: 2.5vh;
+  font-size: 15px;
+  text-align: center;
+  }
+  
+  #references {
+  font-size: 15px;
+  text-align: left;
+  color: rgb(34, 34, 34);
+  padding-bottom: 0.8vw;
+  padding-top: 0vw;
+  padding-left: 10px;
+  font-family: OpenSans-Light;
+  }
+  
+  #referencesButtonBack{
+  margin-top: 4.5vh;
+  border-radius: 6px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 38px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  }
+  
+  #referencesButton{
+  margin-top: 4.5vh;
+  border-radius: 6px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16.5px;
+  padding: 8px 32px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  }
+  
+  #reference-container{
+  width: 80%;
+  }
+  
+  #text-reference-container{
+  width: 80%;
+  }
+  
+  
+  /*  
+  ---
+  > MOBILE RESPONSIVENESS SECTION <
+  ---
+  */
+  
+  @media screen and (max-width: 480px) and (min-width: 0px) {
+  .center {
+      color: white;
+      line-height: 1.4;
+  }
+  
+  #showcase{
+    height: 50vh;
+  }
+  
+  #big-header{
+    font-size: 50px;
+  }
+  
+  #small-header{
+    font-size: 16px;
+  }
+  
+  #titlesubheading-container{
+    width: 80%;
+  }
+  
+  .slide-container{
+    width: 100%;
+  }
+  
+  h1{
+    font-size: 20px;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+  
+  h2{
+    font-size: 14px;
+    margin: 0px;
+  }
+  
+  #food{
+    margin-top: 16px;
+  }
+  
+  div.col{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  h3{
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  h4 {
+    text-align: center;
+    color: #444;
+    margin-top: 1.3vh;
+    margin-bottom: 10px;
+    font-family: OpenSans-Light;
+    font-size: 25px;
+  }
+  
+  #food{
+    font-size: 11px;
+  }
+  
+  #step-title{
+    padding: 15px 20px 5px;
+  }
+  
+  #title-subheading{
+    padding: 15px 20px 0px;
+  }
+  
+  #serving-size{
+    font-size: 0px;
+  }
+  
+  #slider-container {
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+    height: 750px;
+  }
+  
+  #post-subtitle-spacing-3{
+    padding-bottom: 1.0vh;
+  }
+  
+  #rand-spacing{
+    padding-bottom: 1.8vh;
+  }
+  
+  div.row{
+    width: 100%;
+    padding-bottom: 9px;
+  }
+  
+  #dots-container {
+    margin-bottom: 25px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: -10%;
+    top: 60%;
+  }
+  
+  .prev {
+    left: -10%;
+    top: 60%;
+  }
+  
+  .footprint_text{
+    font-size: 14px;
+    padding-bottom: 18px;
+  }
+  
+  .footprint{
+    font-size: 22px;
+  }
+  
+  .selectpicker{
+    width: 65%;
+  }
+  
+  .btn{
+    width: 7vw;
+    height: 43px;
+  }
+  
+  .col-headers{
+    width: 7vw;
+  }
+  
+  #table-heading-font{
+    font-size: 10.5px;
+  }
+  
+  #submitButton{
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+  
+  .final-title{
+    font-size: 24px;
+    padding-bottom: 7px;
+  }
+  
+  #title-subheading {
+    padding-bottom: 10px;
+    padding-top: 0.5vw;
+    font-size: 12px;
+  }
+  
+  .footprinttext_description{
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .table {
+    padding: 0vh;
+    width: 100%;
+  }
+  
+  #reference-container{
+    width: 95%;
+  }
+  
+  #text-reference-container{
+    width: 95%;
+  }
+  
+  #references {
+    font-size: 10px;
+    text-align: left;
+    color: rgb(34, 34, 34);
+    padding-bottom: 8px;
+    padding-top: 0vw;
+    padding-left: 0px;
+    font-family: OpenSans-Light;
+  }
+  
+  #referencesButtonBack{
+    margin-top: 22px;
+    border-radius: 6px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 8px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  }
+  
+  #referencesButton{
+    margin-top: 30px;
+    border-radius: 6px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 8px 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 4px 8px 0 rgba(0,0,0,0.19);
+  }
+  
+  }
